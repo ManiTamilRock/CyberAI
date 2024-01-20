@@ -1,0 +1,13 @@
+{
+    "intents": [
+        {"tag": "greeting", "patterns": ["hello", "hi", "hey"], "responses": ["Hello!", "Hi there!", "Greetings!"]},
+        {"tag": "security_issue", "patterns": ["What is malware?", "How to secure my computer?"], "responses": ["Malware is malicious software. To secure your computer, ensure you have updated antivirus software and a firewall."]},
+        {"tag": "cyber_security", "patterns": ["What is cybersecurity?", "Define cybersecurity","what is meant by cybersecurity?"], "responses": ["Cybersecurity aims to protect individuals' and organizations' systems, applications, computing devices, sensitive data and financial assets against simple and annoying computer viruses, sophisticated and costly ransomware attacks, and everything in between."]},
+        {"tag": "md5_hash", "patterns": ["Calculate MD5 hash in Python", "Python MD5 example"],"responses": [
+                   "Sure, here's an example Python code to calculate MD5 hash:\n\n\nimport hashlib\n\ndef calculate_md5(input_string):\n\t   md5_hash = hashlib.md5(input_string.encode()).hexdigest()\n\t    return md5_hash\n\n# Example usage:\ninput_string = 'Hello, MD5!'\nmd5_result = calculate_md5(input_string)\nprint(f'MD5 Hash of {input_string}: {md5_result}')\n"
+            ]
+        
+        },
+        {"tag": "goodbye", "patterns": ["bye", "goodbye", "see you"], "responses": ["Goodbye!", "See you later!", "Take care!"]}
+    ]
+}
